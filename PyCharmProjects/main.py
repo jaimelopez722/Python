@@ -1,25 +1,37 @@
-# Shopping cart program using an item, price, and quantity
+import math
 
-# item = input("What item would you like to buy?: ")
-# price = float(input("What is the price: "))
-# quantity = int(input("How many would you like?: "))
+# arithmetic
+
+# friends = 0
 #
-# total = price * quantity
+# friends = friends + 1
+# friends = friends - 2
+# friends = friends * 4
+# friends = friends / 2
+# friends = friends ** 2
+# remainder = friends % 2
 #
-# print(f"You have bought {quantity} {item}'s at {price} each. Your total is ${total}")
+# print(friends)
+# print(remainder)
+
+x = 9
+# y = -4
+# z = 5
+
+# rounds to nearest whole number
+# result = round(x)
+# result = abs(y)
+# result = pow(z, 3)
+
+# result = max(x,y,z)
+#
+# print(result)
+
+# math.ceil function - rounds up
+# math.floor function - rounds down
 
 
-# Madlibs game
-# Word game where you create a story
-# by filling in blanks with random words
+print(math.pi) # prints out pi = 3.141592653589793
+print(math.e) # prints out e = 2.718281828459045
 
-adjective1 = input("Enter an adjective (description): ")
-noun1 = input("Enter a noun (person, place, thing): ")
-adjective2 = input("Enter an adjective (description): ")
-verb1 = input("Enter a verb ending with 'ing' : ")
-adjective3 = input("Enter an adjective (description): ")
-
-print(f"Today I went to a {adjective1} zoo.")
-print(f"In an exhibit, I saw a {noun1}.")
-print(f"{noun1} was {adjective2} and {verb1}")
-print(f"I was {adjective3}.")
+print(int(math.sqrt(x)))
