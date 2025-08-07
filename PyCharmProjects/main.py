@@ -1,16 +1,11 @@
-# Python weight converter
+unit = input("Is this temperature in Celsius or Fahrenheit (C/F): ").upper()
+temp = float(input("Enter the temperature: "))
 
-weight = float(input("Enter your weight: "))
-unit = input("Kilograms or Pounds? (K or L): ").upper()
-
-if unit == 'K':
-    weight = round((weight * 2.205),2)
-    unit = "Pounds"
-    print(f"Your weight in {unit} is {weight}")
-elif unit == 'L':
-    unit = "Kilograms"
-    weight = round((weight / 2.205),2)
-    print(f"Your weight in {unit} is {weight}")
+if unit == "C":
+    temp = round(((9*temp)/5) + 32,1)
+    print(f"The temperature in Fahrenheit is {temp}°F.")
+elif unit == "F":
+    temp = round((temp - 32) * (5/9),1)
+    print(f"The temperature in Celsius is {temp}°C.")
 else:
-    print("Please enter a valid unit.")
-
+    print(f"{unit} is an invalid unit of measurement")
