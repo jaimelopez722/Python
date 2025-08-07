@@ -1,11 +1,12 @@
-unit = input("Is this temperature in Celsius or Fahrenheit (C/F): ").upper()
-temp = float(input("Enter the temperature: "))
+# logical operators = evaluate multiple conditions (or, and, not)
+#                or = at least one condition must be True
+#               and = both conditions must be True
+#               not = inverts the condition (not False, not True)
 
-if unit == "C":
-    temp = round(((9*temp)/5) + 32,1)
-    print(f"The temperature in Fahrenheit is {temp}°F.")
-elif unit == "F":
-    temp = round((temp - 32) * (5/9),1)
-    print(f"The temperature in Celsius is {temp}°C.")
+temp = 25
+is_raining = False
+
+if temp > 35 or temp < 0 or is_raining:
+    print("The event is cancelled")
 else:
-    print(f"{unit} is an invalid unit of measurement")
+    print("The event is still scheduled!")
