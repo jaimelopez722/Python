@@ -1,25 +1,16 @@
-# Python calculator
+# Python weight converter
 
-# asks user for operation to perform
-operator = input("Enter an operator (+ - * /) : ")
+weight = float(input("Enter your weight: "))
+unit = input("Kilograms or Pounds? (K or L): ").upper()
 
-# asks user for 2 numbers
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
-
-
-# goes through logic of what user chose
-if operator == '+':
-    result = num1 + num2
-    print(round(result,2))
-elif operator == '-':
-    result = num1 - num2
-    print(abs(result))
-elif operator == '*':
-    result = num1 * num2
-    print(round(result,2))
-elif operator == '/':
-    result = num1 / num2
-    print(round(result,2))
+if unit == 'K':
+    weight = round((weight * 2.205),2)
+    unit = "Pounds"
+    print(f"Your weight in {unit} is {weight}")
+elif unit == 'L':
+    unit = "Kilograms"
+    weight = round((weight / 2.205),2)
+    print(f"Your weight in {unit} is {weight}")
 else:
-    print(f"{operator} is not a correct operator.")
+    print("Please enter a valid unit.")
+
