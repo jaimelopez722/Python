@@ -3,10 +3,11 @@
 #               and = both conditions must be True
 #               not = inverts the condition (not False, not True)
 
-temp = 25
+temp = 40
 is_raining = False
+is_sunny = True
 
-if temp > 35 or temp < 0 or is_raining:
-    print("The event is cancelled")
+if temp >= 30 and is_sunny:
+    print("It is hot 🥵 and sunny ☀️")
 else:
-    print("The event is still scheduled!")
+    print("It is cold 🥶 and sunny ☀️")
