@@ -1,13 +1,19 @@
-# logical operators = evaluate multiple conditions (or, and, not)
-#                or = at least one condition must be True
-#               and = both conditions must be True
-#               not = inverts the condition (not False, not True)
+# conditional expression = A one-line shortcut for the if-else statement (ternary operator)
+#                          Print or assign one of two values based on a condition
+#                          syntax = return X if condition is true else return Y
 
-temp = 40
-is_raining = False
-is_sunny = True
 
-if temp >= 30 and is_sunny:
-    print("It is hot 🥵 and sunny ☀️")
-else:
-    print("It is cold 🥶 and sunny ☀️")
+#num = -5
+# a = 9
+# b = 15
+user_role = "admin"
+
+
+#print("Positive" if num > 0 else "Negative")
+# max_num = a if a>b else b
+# min_num = a if a<b else b
+access_level = "Full Access" if user_role == "admin" else "Limited Access"
+
+# print(max_num)
+# print(min_num)
+print(access_level)
