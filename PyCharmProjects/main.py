@@ -1,19 +1,7 @@
-# conditional expression = A one-line shortcut for the if-else statement (ternary operator)
-#                          Print or assign one of two values based on a condition
-#                          syntax = return X if condition is true else return Y
+num = int(input("Enter a # between 1-10: "))
 
+while num < 1 or num > 10:
+    print(f"{num} is not valid!")
+    num = int(input("Enter a # between 1-10: "))
 
-#num = -5
-# a = 9
-# b = 15
-user_role = "admin"
-
-
-#print("Positive" if num > 0 else "Negative")
-# max_num = a if a>b else b
-# min_num = a if a<b else b
-access_level = "Full Access" if user_role == "admin" else "Limited Access"
-
-# print(max_num)
-# print(min_num)
-print(access_level)
+print(f"Your number is {num}")
