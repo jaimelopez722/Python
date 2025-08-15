@@ -1,7 +1,8 @@
-num = int(input("Enter a # between 1-10: "))
+# 2-D list
 
-while num < 1 or num > 10:
-    print(f"{num} is not valid!")
-    num = int(input("Enter a # between 1-10: "))
+num_pad = ((1,2,3),(4,5,6),(7,8,9),("*",0,"#"))
 
-print(f"Your number is {num}")
+for row in num_pad:
+    for num in row:
+        print(num,end= " ")
+    print()
