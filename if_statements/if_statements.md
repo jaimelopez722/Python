@@ -13,7 +13,7 @@ The `<` and `>` symbols are probably quite familiar to you.
 - `!=` denotes "not equal to."
 
 - Conditional statements compare a left hand term to a right hand term.
-
+------------------------------------------------------------------------------------------------------------------------
 ## if Statements
 - In your terminal window, type code compare.py. This will create a brand new file called “compare.”
 - In the text editor window, begin with the following
@@ -28,7 +28,10 @@ Notice how your program takes the input of the user for both x and y, casting th
 
 - `if` statements use bool (Boolean) values (True or False) to decide whether or not to execute code. If the comparison x > y is True, the interpreter runs the indented block.
 
+------------------------------------------------------------------------------------------------------------------------
+
 ## Control Flow, elif, and else
+
 
 - Further revise your code as follows:
 
