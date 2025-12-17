@@ -13,7 +13,7 @@ Interest is the monetary charge for the privilege of borrowing money. Interest e
 
 ![alt text](image.png)
 
-
+```python
     principle = 0
     rate = 0
     time = 0
@@ -39,6 +39,9 @@ Interest is the monetary charge for the privilege of borrowing money. Interest e
 
     total = principle * pow((1 + (rate/100)),time)
     print(f"Your balance after {time} year/s is: ${total:.2f}")
+```
+
+Output:
 
 ![alt text](image-1.png)
 
@@ -46,6 +49,7 @@ Interest is the monetary charge for the privilege of borrowing money. Interest e
 
 Same program, but now user is allowed to enter 0's
 
+```python
     principle = 0
     rate = 0
     time = 0
@@ -77,6 +81,9 @@ Same program, but now user is allowed to enter 0's
 
     total = principle * pow((1 + (rate/100)),time)
     print(f"Your balance after {time} year/s is: ${total:.2f}")
+```
+
+Output: 
 
 ![alt text](image-2.png)
 
