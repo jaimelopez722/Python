@@ -20,8 +20,15 @@ for key, value in menu.items():
 print("------------------")
 print()
 while True:
-    food = input("Select an item (q to quit): ")
+    food = input("Select an item (q to quit): ").capitalize()
     if food.lower() == 'q':
         break
     elif menu.get(food) is not None:
-        cart.append()
+        cart.append(food)
+
+print("------------------")
+for food in cart:
+    total += menu.get(food)
+    print(food,end=", ")
+print()
+print(f"Your total cost: ${total:.2f}")
