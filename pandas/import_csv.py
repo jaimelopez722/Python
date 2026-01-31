@@ -7,7 +7,7 @@ df = pd.read_csv("data.csv", index_col= "Name")
 
 # Selection by Column
 # print(df["Name"])
-# print(df[["Name", "Height", "Weight"]]) # multiple column selections
+print(df[["Height", "Weight"]].to_string()) # multiple column selections, YOU MUST PASS IN A LIST
 
 # Selection by Row/s
-print(df.loc["Pikachu"])
+# print(df.loc["Pikachu"])
